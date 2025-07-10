@@ -1,0 +1,11 @@
+packaging
+torch
+numpy
+torchvision
+tqdm
+tensorboard
+scipy
+ml_collections
+scikit-learn
+flask
+flask-cors
