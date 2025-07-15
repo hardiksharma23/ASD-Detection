@@ -1,5 +1,11 @@
 # ASD Detection Project
 
+<p align="center">
+  <img width="350" alt="Screenshot 2025-07-15 184122" src="https://github.com/user-attachments/assets/10bddb72-b882-4ca2-86dc-802ac8c60471" />
+  <img width="350" alt="Screenshot 2025-03-28 071824" src="https://github.com/user-attachments/assets/8e3ef372-cbf9-45a0-b97d-7e85671eb19b" />
+</p>
+
+
 ## Deployment
 - **Backend:** Deployed on AWS EC2, accessible via AWS API Gateway
 - **Frontend:** Deployed on AWS Amplify
@@ -143,5 +149,4 @@ yarn build
 The production-ready files will be in the `dist/` directory.
 
 ---
-
 
