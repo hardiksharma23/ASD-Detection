@@ -1,7 +1,7 @@
 # ASD Detection Project
-<img width="1918" height="869" alt="Screenshot 2025-03-31 024518" src="https://github.com/user-attachments/assets/11f54054-4bbf-408c-927b-495bf6d21845" />
 
-<img width="530" height="637" alt="Screenshot 2025-03-28 071824" src="https://github.com/user-attachments/assets/f55c646c-1c1f-4c87-b7f2-dbcd916aa373" />
+<img width="637" height="868" alt="Screenshot 2025-07-15 184122" src="https://github.com/user-attachments/assets/10bddb72-b882-4ca2-86dc-802ac8c60471" /><img width="530" height="637" alt="Screenshot 2025-03-28 071824" src="https://github.com/user-attachments/assets/8e3ef372-cbf9-45a0-b97d-7e85671eb19b" />
+
 
 ## Deployment
 - **Backend:** Deployed on AWS EC2, accessible via AWS API Gateway
