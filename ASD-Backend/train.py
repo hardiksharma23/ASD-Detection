@@ -21,6 +21,7 @@ from model_files.modeling import VisionTransformer, CONFIGS
 from scheduler import WarmupLinearSchedule, WarmupCosineSchedule
 from data_utils import get_loader
 from dist_util import get_world_size
+from lion_pytorch import Lion  # Add this import
 
 
 logger = logging.getLogger(__name__)
@@ -161,10 +162,13 @@ def train(args, model):
     train_loader, test_loader = get_loader(args)
 
     # Prepare optimizer and scheduler
-    optimizer = torch.optim.SGD(model.parameters(),
-                                lr=args.learning_rate,
-                                momentum=0.9,
-                                weight_decay=args.weight_decay)
+    optimizer = Lion(model.parameters(),
+                     lr=args.learning_rate,
+                     weight_decay=args.weight_decay)
+    # optimizer = torch.optim.SGD(model.parameters(),
+    #                             lr=args.learning_rate,
+    #                             momentum=0.9,
+    #                             weight_decay=args.weight_decay)
     t_total = args.num_steps
     if args.decay_type == "cosine":
         scheduler = WarmupCosineSchedule(optimizer, warmup_steps=args.warmup_steps, t_total=t_total)
